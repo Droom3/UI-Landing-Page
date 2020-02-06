@@ -1,0 +1,607 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Merriweather', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 1rem;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+}
+.header header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.header header a .logo {
+  height: 5.5rem;
+  width: 18rem;
+}
+@media (max-width:800px) {
+  .header header a .logo {
+    height: 5.5rem;
+    width: 18rem;
+  }
+}
+@media (max-width:500px) {
+  .header header {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  .header header a .logo {
+    height: 11rem;
+    width: 39.5rem;
+  }
+}
+.header header nav {
+  display: flex;
+  margin-left: 38rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  justify-content: space-between;
+  width: 33%;
+  font-size: 2rem;
+  overflow: hidden;
+}
+@media (max-width:800px) {
+  .header header nav {
+    display: flex;
+    margin-left: 25rem;
+    justify-content: space-between;
+    width: 33%;
+    font-size: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow: hidden;
+  }
+}
+@media (max-width:500px) {
+  .header header nav {
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+}
+.header header nav a {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  text-decoration: line;
+}
+.header header nav .grow {
+  transition: all 0.2s ease-in-out;
+}
+.header header nav .grow:hover {
+  transform: scale(1.1);
+}
+.header header img {
+  display: flex;
+  height: 50%;
+}
+@media (max-width:500px) {
+  .header header img {
+    height: 100%;
+  }
+}
+@media (max-width:800px) {
+  .header header .icon {
+    margin: 0 1rem;
+  }
+}
+@media (max-width:500px) {
+  .header header .icon {
+    display: none;
+  }
+}
+.ourmission {
+  text-align: center;
+  background-color: #cccccc;
+  background-image: url(/resources/smooth.jpg);
+  border: solid 0.1rem black;
+}
+@media (max-width:500px) {
+  .ourmission {
+    margin: 0 1rem;
+  }
+}
+@media (max-width:800px) {
+  .ourmission {
+    margin: 0 1rem;
+  }
+}
+.ourmission h2 {
+  padding-top: 2rem;
+  color: white;
+}
+.ourmission p {
+  font-family: 'Merriweather', serif;
+  margin: 0 0.5rem;
+  color: white;
+}
+button {
+  background-color: #E800FF;
+  border-style: none;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+button:hover {
+  background-color: white;
+  color: #E800FF;
+}
+.teamDT {
+  display: block;
+  padding-bottom: 1rem;
+  background-image: url(/resources/smooth.jpg);
+  background-color: #cccccc;
+  opacity: 0.9;
+}
+.teamDT figcaption {
+  margin-top: 1rem;
+}
+.teamDT figcaption a {
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .teamDT {
+    display: none;
+  }
+}
+.teamDT .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+.teamDT .title h2 {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.teamDT .row1 {
+  margin: 1 auto;
+  display: flex;
+  width: 100%;
+}
+.teamDT .row1 .UI {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.teamDT .row1 .UI .row1fig {
+  width: 45%;
+  height: 25rem;
+}
+.teamDT .row1 .UI .row1fig figcaption {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.teamDT .row1 .UI .row1fig figcaption a {
+  color: white;
+}
+.teamDT .row2 {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+}
+.teamDT .row2 .front {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 25rem;
+}
+.teamDT .row2 .front .row2fig {
+  width: 90%;
+  justify-content: space-between;
+}
+.teamDT .row2 .front .row2fig figcaption {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.teamDT .row2 .AR {
+  margin-left: 2.5rem;
+}
+.teamDT .row2 .TT {
+  margin-left: 2rem;
+}
+.teamDT .row2 .BJ {
+  margin-left: 1rem;
+}
+.teamDT .row3 {
+  margin: 1 auto;
+  display: flex;
+  width: 100%;
+}
+.teamDT .row3 .back {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.teamDT .row3 .back .row3fig {
+  width: 45%;
+  height: 25rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.teamDT .row3 .back .row3fig figcaption {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.sectionslide {
+  background-image: url(/resources/smooth.jpg);
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  text-align: center;
+}
+@media (min-width:801px) {
+  .sectionslide {
+    display: none;
+  }
+}
+.sectionslide h1,
+.sectionslide h2 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 1rem;
+}
+.sectionslide .trigger {
+  display: none;
+}
+.sectionslide .slider,
+.sectionslide .slider-wrapper {
+  position: relative;
+  height: 25rem;
+}
+.sectionslide .slide {
+  background-color: none;
+  width: 75%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 12.5%;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.sectionslide .slide-img {
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+.sectionslide .slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+.slide-caption {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  left: 0%;
+  font-size: 1.5rem;
+}
+.slide-caption p {
+  color: white;
+}
+.slide-caption p a {
+  color: white;
+}
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+.slider-nav {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.slider-nav__item {
+  display: inline-block;
+}
+.slider-nav__label {
+  font-size: 1.3rem;
+  background-color: #E800FF;
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s ease-in-out;
+}
+.slider-nav__label:hover,
+.slider-nav__label:active,
+.slider-nav__label:focus {
+  background-color: white;
+  color: #E800FF;
+}
+.footer {
+  display: flex;
+}
+.footer footer {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.footer footer a .logo {
+  height: 5.5rem;
+  width: 18rem;
+}
+@media (max-width:800px) {
+  .footer footer a .logo {
+    height: 5.5rem;
+    width: 18rem;
+  }
+}
+@media (max-width:500px) {
+  .footer footer {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+    align-content: center;
+    width: 100%;
+  }
+  .footer footer a .logo {
+    height: 11rem;
+    width: 39.5rem;
+  }
+}
+.footer footer nav {
+  display: flex;
+  margin-left: 38rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  justify-content: space-between;
+  width: 33%;
+  font-size: 2rem;
+  overflow: hidden;
+}
+@media (max-width:800px) {
+  .footer footer nav {
+    display: flex;
+    margin-left: 25rem;
+    justify-content: space-between;
+    width: 33%;
+    font-size: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow: hidden;
+  }
+}
+@media (max-width:500px) {
+  .footer footer nav {
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+}
+.footer footer nav a {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  text-decoration: line;
+}
+.footer footer nav .grow {
+  transition: all 0.2s ease-in-out;
+}
+.footer footer nav .grow:hover {
+  transform: scale(1.1);
+}
+.footer footer img {
+  display: flex;
+  height: 50%;
+}
+@media (max-width:500px) {
+  .footer footer img {
+    height: 100%;
+  }
+}
+@media (max-width:800px) {
+  .footer footer .icon {
+    margin: 0 1rem;
+  }
+}
+@media (max-width:500px) {
+  .footer footer .icon {
+    display: none;
+  }
+}
+.main {
+  background-image: url(/resources/smooth.jpg);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+.main h1 {
+  margin: 2rem auto;
+}
+.main p {
+  margin: 0 1rem;
+}
+.main .card {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
