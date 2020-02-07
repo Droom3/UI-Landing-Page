@@ -1,0 +1,502 @@
+.imgsize {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.walkpositioning {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: initial !important;
+}
+html,
+body {
+  font-family: 'Merriweather', serif;
+  color: #5E6164;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  color: #23293B;
+  color: #ffbb00;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #ff00ff;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nava {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 30%;
+  border-radius: 0px;
+}
+@media (max-width: 400px) {
+  .nava {
+    left: 25%;
+  }
+}
+.nava nav {
+  position: relative;
+  left: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .nava nav {
+    right: 19%;
+  }
+}
+.nava ul a {
+  padding-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ff00dd;
+  padding: 10px;
+}
+@media (max-width: 400px) {
+  .nava ul a {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 750px) {
+  .nava ul a {
+    position: relative;
+    right: 90px;
+  }
+}
+.nava a:hover {
+  background-image: linear-gradient(#3e0241, #001eff);
+}
+.main {
+  width: 100%;
+  position: relative;
+  right: 32.5%;
+  border-radius: 1px;
+}
+@media (max-width: 400px) {
+  .main {
+    width: 100%;
+    right: 25%;
+  }
+}
+.About {
+  font-size: 120px;
+  color: #ff00dd;
+  position: relative;
+  left: 210px;
+  border: #ffa600 solid 10px;
+  text-align: center;
+  width: 1000px;
+}
+footer {
+  color: white;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ff00ff, #0044ff);
+}
+footer:hover {
+  background-image: linear-gradient(#fffb00, #00eeff);
+}
+.foot {
+  color: white;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 400px) {
+  .one {
+    width: 450px;
+    right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .two {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .three {
+    display: none;
+  }
+}
+img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.Drooms-Mission {
+  padding: 15px;
+}
+.Drooms-Mission h3 {
+  margin-top: 11px;
+}
+.Drooms-Mission p {
+  margin-top: 13px;
+}
+h3 {
+  padding-top: 110px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+}
+@media (max-width: 400px) {
+  .walk {
+    flex-direction: column-reverse;
+    width: 900px;
+    position: relative;
+    right: 10px;
+    padding: 0px;
+  }
+}
+.walk .walk-text {
+  width: 50%;
+  position: relative;
+  bottom: 105px;
+}
+@media (max-width: 400px) {
+  .walk .walk-text {
+    position: relative;
+    left: 40px;
+    width: 19%;
+  }
+}
+@media (max-width: 750px) {
+  .walk .walk-text {
+    width: 90%;
+    position: relative;
+    bottom: 160px;
+  }
+}
+.walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text .button {
+  position: relative;
+  bottom: 760px;
+  background-color: red;
+  width: 200px;
+  padding: 20px;
+  font-size: 40px;
+  background-image: linear-gradient(#ff00ff, #0059ff);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.walk .walk-text .button:hover {
+  background-image: linear-gradient(#fffb00, #00eeff);
+}
+@media (max-width: 750px) {
+  .walk .walk-text .button {
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .walk .walk-text .button {
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+}
+.walk .walk-text .button2 {
+  position: relative;
+  bottom: 840px;
+  background-color: red;
+  left: 145%;
+  width: 200px;
+  padding: 20px;
+  font-size: 40px;
+  background-image: linear-gradient(#ff00ff, #0044ff);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.walk .walk-text .button2:hover {
+  background-image: linear-gradient(#fffb00, #00eeff);
+}
+@media (max-width: 750px) {
+  .walk .walk-text .button2 {
+    text-align: center;
+    position: relative;
+    bottom: 63px;
+    left: 290px;
+  }
+}
+@media (max-width: 400px) {
+  .walk .walk-text .button2 {
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 10px;
+  }
+}
+.walk .walk-text .contact-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.cona {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  bottom: 40px;
+}
+@media (max-width: 400px) {
+  .cona {
+    width: 300px;
+  }
+}
+.dec {
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  background-image: linear-gradient(#ea00ff, #006eff);
+}
+.intro2 h2 {
+  font-size: 40px;
+  padding: 15px;
+}
+.intro2 p {
+  padding: 0 15px;
+}
+.ben {
+  display: flex;
+  flex-direction: column;
+  font-size: 59px;
+  color: #ff9100;
+}
+@media (max-width: 400px) {
+  .lasta {
+    width: 33%;
+  }
+}
+.ben {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1px;
+  position: relative;
+  bottom: 0rem;
+}
+@media (max-width: 750px) {
+  .ben {
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .ben {
+    position: relative;
+    left: 1%;
+    flex-direction: column;
+  }
+}
+.ben img {
+  width: 75%;
+  border-radius: 0px;
+  padding: 10px;
+  height: 200px;
+}
+@media (max-width: 750px) {
+  .ben img {
+    width: 290px;
+    position: relative;
+    left: 1%;
+    right: 4%;
+  }
+}
+.ben a p {
+  font-size: 20px;
+  position: relative;
+  left: 5%;
+  color: #ff00ff;
+}
+.ben a {
+  text-decoration: none;
+}
+.mission {
+  position: relative;
+  left: 1%;
+}
