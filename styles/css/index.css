@@ -295,8 +295,15 @@ button {
   color: white;
   margin-bottom: 2rem;
 }
+button a {
+  text-decoration: none;
+  color: white;
+}
 button:hover {
   background-color: white;
+}
+button:hover a {
+  text-decoration: none;
   color: #E800FF;
 }
 .teamDT {
@@ -598,10 +605,32 @@ button:hover {
   margin: 2rem auto;
 }
 .main p {
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 }
 .main .card {
   text-align: center;
   justify-content: center;
   width: 100%;
+}
+.main .card h2 {
+  margin-top: 1rem;
+}
+.main .card button {
+  background-color: #E800FF;
+  border-style: none;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.main .card button a {
+  text-decoration: none;
+  color: white;
+}
+.main .card button:hover {
+  background-color: white;
+}
+.main .card button:hover a {
+  text-decoration: none;
+  color: #E800FF;
 }
